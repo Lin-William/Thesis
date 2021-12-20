@@ -1,0 +1,61 @@
+%!TEX program = xelatex
+%-*- coding: UTF-8 -*-
+\documentclass{bjutthesis}
+\usepackage{lipsum, zhlipsum}
+%\usepackage{layout, showframe}
+
+\ezsetkeys{%
+	clc            = {TU311},
+	udc            = {004},
+	schoolcode     = {10005},
+	secretlevel    = {公开},
+	studentid      = {S201904283},
+	ctitle         = {\bjutthesis~\version\,——北京工业大学硕士学位论文\LaTeX 模板},
+	cauthor        = {林钰辉},
+	cdiscipline    = {建筑与土木工程},
+	cmajor         = {城市水系统健康循环与水环境恢复技术},
+	cdegree        = {工学硕士},
+	csupervisor    = {张永祥},
+	csupervstitle  = {教授},
+	ccollege       = {城市建设学部},  
+	cdate          = {\the\year 年\the\month 月},
+	corganization  = {北京工业大学},
+	%% ==== 英文
+	etitle         = {\bjutthesis: A~\LaTeX~Template for Doctral Dissertation of Beijing University of Technology},
+	edegree        = {Doctor of Engineering},
+	emajor         = {Basketball},
+	eauthor        = {YAO Ming},
+	esupervisor    = {DU　Xiuli}
+}
+
+\makeatletter
+\begin{document}
+\begin{sloppypar}
+\makecover
+\maketitle
+\makestate
+\makeatother
+\frontmatter
+\include{tex/abstract}
+\makebitoc
+
+\mainmatter
+\include{tex/chapter01.tex}
+\include{tex/chapter02.tex}
+\include{tex/chapter03.tex}
+
+
+
+% bibliography, glossary and index would go here.
+\include{tex/conclusion}
+\makebib{ref/reference}
+
+\appendix
+% \include{tex/appendix_a}
+% \include{tex/appendix_b}
+
+\backmatter
+\include{tex/publication}
+\include{tex/acknowledgement}
+\end{sloppypar}
+\end{document}
