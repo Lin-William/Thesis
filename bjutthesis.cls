@@ -136,6 +136,7 @@
 \crefname{equation}{式}{式}
 \crefname{figure}{图}{图}
 \crefname{table}{表}{表}
+\crefname{section}{小节}{小节}
 
 \hypersetup{%
 	linktoc=all,
@@ -155,6 +156,7 @@
 \RequirePackage{caption}
 \RequirePackage{subcaption}
 \RequirePackage[list=off]{bicaption}
+\RequirePackage[justification=centering]{caption}
 
 \captionsetup[figure]{labelsep=space}
 \captionsetup[figure][bi-first]{name=图}
